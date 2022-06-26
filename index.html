@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+            Scoreboard
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <!-- importing font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Lobster&family=Permanent+Marker&family=Stoke&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@800&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="images/title.png">
+    </head>
+    <body>
+        <div id="container">
+
+            <audio id="audio" src="audio/metalgearsolid-4-alert-sound.mp3" autoplay="false" ></audio>
+            
+            <div class="innercont">
+                <h1>HOME</h1>
+                <div class="scorecard">
+                    <h1 class="score" id="scorehome">0</h1>
+                </div>
+                <div class="buttoncontainer">
+                    <button onclick="home1()" class="incscore"><b>+1</b></button>
+                    <button onclick="home2()" class="incscore"><b>+2</b></button>
+                    <button onclick="home3()" class="incscore"><b>+3</b></button>
+                </div>
+            </div>
+
+            <div class="innercont">
+                <h1>AWAY</h1>
+                <div class="scorecard">
+                    <h1 class="score" id="scoreaway">0</h1>
+                </div>
+                <div class="buttoncontainer">
+                    <button onclick="away1()" class="incscore"><b>+1</b></button>
+                    <button onclick="away2()" class="incscore"><b>+2</b></button>
+                    <button onclick="away3()" class="incscore"><b>+3</b></button>
+                </div>
+            </div>
+
+        </div>
+        <script src="index.js"></script>
+
+        <div id="clear-btn">
+            <button id="clear" class="button" onclick="newMatch()">
+                NEW MATCH
+            </button>
+
+            <button id="end" class="button" onclick="endMatch()">
+                END MATCH
+            </button>
+        </div>
+    </body>
+</html>
